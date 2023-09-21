@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Courier;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.flex-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-links {
+  width:200px;
+  height:150px;
+  background-color: #FFB643;
+  color: #000;
+  margin:10px;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* nav bar styling */
+
+nav{
+    justify-content: space-between;
+    padding: 2%;
+    background-color: #4535AA;
+    color: #fff;
+}
+
+#nav-options a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #000;
+    background-color: #FFB643;
+    border-radius: 5px;
+    margin-right:4px;
+}
+
+/*
+    Profile info
+*/     
+.header
+{
+    padding:30px;
+    background-color: #000;
+}
+
+.user-info
+{
+    flex:4;
+    padding:40px;
+    color: #eee;
+}
+
+.user-pic{
+    flex:1;
+    padding:40px;
+}
+
+/* text colors */
+
+.text-yellow {
+    color: #ffb643;
+}
+
+.text-pink {
+    color: #ed639e;
+}
+
+.text-purple {
+    color: #4353aa;
+}
+
+/* spacing and layout properties */
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 20px;
+}
+.center {
+    text-align: center;
+}
+
+/* common styling */
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+/* Form styling */
+input {
+  padding:5px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width:250px;
+  margin: 5px 0;
+}
+
+textarea {
+  padding:5px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width:250px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #4353aa;
+  color: #eee;
+  border-radius: 5px;
+  border:0;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+/* responsive */
+
+@media (max-width: 650px) {
+    .flex
+    {
+        flex-direction: column;
+    }
+
+    #nav-options a {
+        font-size: 0.75em;
+    }
 }
